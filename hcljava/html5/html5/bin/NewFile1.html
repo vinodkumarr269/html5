@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script>
+    function showInput() {
+        document.getElementById("display").innerHTML = 
+                    document.getElementById("user").value;
+    }
+  </script>
+
+  </head>
+<body>
+
+  <form>
+    
+    <table border="1" align="center" width="300" colspan="5"  bgcolor="green">
+	<tr align="center" bgcolor=" #1aff1a">
+		<th>Sign Up</th>
+	</tr>
+	<tr>
+		<td><input type="text" id="user" placeholder="username" style="width:90%"></td>
+	</tr>
+	<tr >
+		<th><input type="text" placeholder="EmailAddress" style="width:90%"></th>
+	</tr>
+	<tr >
+		<th><input type="text" placeholder="password" style="width:90%"></th>
+	</tr>
+	<tr >
+		<th><input type="text" placeholder="firstname" style="width:90%"></th>
+	</tr>
+	<tr >
+		<th><input type="text" placeholder="lastname" style="width:90%"></th>
+	</tr>
+	</form>
+	
+	<tr >
+		<th ><input type="submit" onclick="showInput()" style="background-color:#1aff1a;width:100%;color:red" ></th>
+	</tr>
+
+</table>
+  <p><div id="display"></div></p>
+</body>
+</html>
